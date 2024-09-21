@@ -14,6 +14,7 @@ df = df.dropna()
 df['Games'] = df['City'] + ' '+ df['Year'].astype(str)
 
 app = Dash(external_stylesheets=[dbc.themes.BOOTSTRAP], title='Historia igrzysk by DL')
+server = app.server
 
 world_geo = "https://raw.githubusercontent.com/johan/world.geo.json/master/countries.geo.json"
 
