@@ -4,3 +4,4 @@ dash_daq
 numpy
 pandas
 plotly
+gunicorn
