@@ -9,7 +9,7 @@ import plotly.graph_objects as go
 import plotly.figure_factory as ff
 from plotly.subplots import make_subplots
 
-df = pd.read_csv(r"C:/Users/Daniel/Desktop/Studia/WD/Projekt/athlete_events.csv", sep=',')
+df = pd.read_csv(r"https://raw.githubusercontent.com/danielukosz15/DashGamesProject/refs/heads/main/athlete_events.csv", sep=',')
 df = df.dropna()
 df['Games'] = df['City'] + ' '+ df['Year'].astype(str)
 
